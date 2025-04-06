@@ -24,7 +24,7 @@ function generateCards(data, containerId) {
         card.innerHTML = `
             <div class="price">${item.price}</div>
             <div class="description">${item.description}</div>
-            <a href="${item.link}" class="button" target="_blank" rel="noopener noreferrer">Подробнее</a>
+            <a href="https://t.me/julie_lovitska" class="button" target="_blank" rel="noopener noreferrer">Подробнее</a>
         `;
 
         container.appendChild(card);
