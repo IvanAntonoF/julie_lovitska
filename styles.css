@@ -1,0 +1,811 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для иконки бургер-меню */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 4px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation {
+    background: linear-gradient(90deg, #f68b7b, #cb3635);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Базовые стили для меню */
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}   
+
+.navigation ul li {
+    margin: 0 40px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Определяем анимацию для плавного появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Применяем анимацию к активному меню */
+.navigation ul.active {
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.navigation ul li a:hover {
+    background-color: #ffffff;
+    color: #f68b7b;
+    transform: scale(1.05);
+}
+
+/* ----------Левые полосы---------- */
+.left-stripes {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: flex;
+    width: 40px;
+    height: calc(100% - 80px);
+}
+
+.left-stripe-1 {
+    background-color: #6c88a1;
+    width: 20px;
+    height: 100%;
+}
+
+.left-stripe-2 {
+    background-color: #8da4be;
+    width: 20px;
+    height: 100%;
+}
+
+.right-stripe {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 40px;
+    height: calc(100% - 80px);
+    background-color: #8da4be;
+}
+
+section {
+    display: flex;
+    width: calc(100% - 80px);
+    height: calc(100vh - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Анимация при наведении */
+section:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Первая колонка с изображением */
+.column-image {
+    width: 30%; /* Ширина первой колонки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-image img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column-image img:hover {
+    transform: scale(1.02);
+}
+
+
+/* ----------Вторая колонка с контентом---------- */
+.column-content {
+    width: 70%; /* Остальная часть для второй колонки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Структура второй колонки */
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 40px;
+}
+
+/* Заголовки и текстовые блоки */
+.courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* about-title: 40% высоты */
+.about-title {
+    display: flex;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.about-title-left {
+    width: 30%; /* 30% для текстов и картинки */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title-text-1 {
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.title-text-2 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-title-left img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* Большой текстовый блок с фоном и тенью */
+.about-title-right {
+    width: 70%; /* 70% для большого текстового блока */
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title-right .big-text {
+    background-color: #f68b7b;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
+    text-align: center;
+}
+
+/* about-text: 40% высоты */
+.about-text {
+    display: flex;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.about-text-left {
+    width: 70%; /* 70% для текста */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.about-text-left .big-text {
+    background-color: #f68b7b;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-text-right {
+    width: 30%; /* 30% для картинки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text-right img {
+    width: 100px;
+    height: 100px;
+}
+
+/* about-footer: 20% высоты */
+.about-footer {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.about-footer .footer-text {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* ----------Общие стили для секции "Курсы"---------- */
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px); /* Учитываем полосы слева и справа */
+    height: calc(100vh - 80px); /* Высота секции на весь экран, минус навигация */
+    margin-left: 40px; /* Отступ от полос слева (общая ширина 40px) */
+    margin-right: 40px; /* Отступ от правой полосы */
+    position: relative;
+    top: 80px; /* Отступ от навигации */
+    justify-content: flex-start;
+}
+
+/* Заголовок секции */
+.courses-title {
+    width: 100%; /* Заголовок занимает всю ширину */
+    height: 20%; /* 20% для заголовка */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-title p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Изображение слева */
+.left-image {
+    position: absolute;
+    bottom: 0; /* Располагаем у нижнего края */
+    left: 40px; /* Впритык к левым полосам */
+    width: 300px;
+    height: 400px;
+}
+
+/* Изображение справа */
+.right-image {
+    position: absolute;
+    bottom: 0; /* Располагаем у нижнего края */
+    right: 0; /* Впритык к правой полосе */
+    width: 500px;
+    height: 350px;
+}
+
+.img-footer-course {
+    display: flex;
+    justify-content: center;
+    gap: 1600px;
+}
+
+.img-course-L {
+    margin-top: 52px;
+    width: 300px ;
+    height: 300px ;
+}
+
+.img-course-R {
+    margin-top: 52px;
+    width: 450px ;
+    height: 300px ;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.img-footer img {
+    margin-top: 60px;
+    width: 250px ;
+    height: 250px ;
+}
+
+
+/* ----------Общие стили для секции "Марафоны"---------- */
+.marathons-section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px); /* Учитываем полосы слева и справа */
+    height: calc(100vh - 80px); /* Высота секции на весь экран, минус навигация */
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: 80px; /* Отступ от навигации */
+    justify-content: flex-start;
+}
+
+/* Заголовок секции */
+.marathons-title {
+    width: 100%; 
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marathons-title p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Изображение под инфо-боксом */
+.bottom-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0 auto; /* Центрируем картинку под инфо-боксом */
+}
+
+
+/* ----------Общие стили для секции "Также вы можете приобрести"---------- */
+.purchase-section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    height: calc(100vh - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: 80px;
+    justify-content: flex-start;
+}
+
+/* Заголовок секции */
+.purchase-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-title p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Изображение под инфо-боксом */
+.bottom-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0 auto;
+}
+
+
+/* ----------Общие стили для секции "YouTube"---------- */
+.youtube-section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    height: calc(100vh - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: 80px;
+    justify-content: flex-start;
+}
+
+/* Заголовок секции */
+.youtube-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-title p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* YouTube плеер с оформлением */
+.youtube-player-box {
+    width: 50%;
+    height: 60%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 10px solid #8da4be;
+    overflow: visible; /* Убираем overflow: hidden, чтобы не скрывать стрелки */
+}
+
+/* YouTube плеер */
+.youtube-player-container {
+    position: relative;
+    border-radius: 20px;
+    width: 100%; /* Контейнер должен занимать всю ширину родителя */
+    height: 100%; /* Контейнер должен занимать всю высоту родителя */
+    overflow: hidden; /* Обязательно скрываем излишки */
+}
+
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Видео адаптируется под контейнер */
+    border: none; /* Убираем границы */
+}
+
+.youtube-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: transparent; /* Прозрачный фон для наложения */
+    cursor: pointer;
+}
+
+
+
+
+/* Кнопки слева и справа от YouTube плеера */
+.left-button, .right-button {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Повышаем z-index */
+}
+
+/* Смещаем кнопки чуть дальше от плеера */
+.left-button {
+    left: -90px;
+}
+
+.right-button {
+    right: -90px;
+}
+
+/* Общие стили для секции "Фраза дня" */
+.phrase-section {
+    display: flex;
+    width: calc(100% - 80px); /* Учитываем полосы */
+    height: calc(100vh - 80px); /* Высота секции на весь экран, минус навигация */
+    margin-left: 40px; /* Отступ от левых полос */
+    margin-right: 40px; /* Отступ от правой полосы */
+    position: relative;
+    top: 80px; /* Отступ от навигации */
+}
+
+/* Левая колонка с изображением */
+.column-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Правая колонка с текстом и изображением */
+.column-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Текст фразы дня */
+.phrase-text {
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Изображение под фразой */
+.phrase-image {
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+/* ----------Общие стили для секции "Отзывы"---------- */
+
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.reviews-title p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Контейнер для списка отзывов */
+.reviews-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth; /* Плавная прокрутка */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Список отзывов */
+.reviews-list {
+    display: flex;
+    gap: 20px; /* Расстояние между карточками */
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+/* Карточка отзыва */
+.review-card {
+    flex: 0 0 auto; /* Карточки располагаются в одну строку */
+    width: 300px;
+    height: 200px; /* Фиксированная высота карточки */
+    background-color: #f5f5f5; /* Цвет фона карточки */
+    border-radius: 15px; /* Закругленные края */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень */
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание содержимого */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Никнейм и текст отзыва */
+.review-card .nickname {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review-card .feedback {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Стили для прокрутки */
+.reviews-container::-webkit-scrollbar {
+    height: 8px; /* Высота скролл-бара */
+}
+
+.reviews-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет трека скролл-бара */
+    border-radius: 10px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background: #8da4be; /* Цвет ползунка */
+    border-radius: 10px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb:hover {
+    background: #6c88a1; /* Цвет ползунка при наведении */
+}
+
+/* Кнопки переключения */
+.left-button.reviews, .right-button.reviews {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-button.reviews {
+    left: -60px;
+}
+
+.right-button.reviews {
+    right: -60px;
+}
+
+
+/* ----------Стили для футера---------- */
+.footer {
+    background: linear-gradient(90deg, #f68b7b, #cb3635);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-center {
+    padding-left: 350px;
+    justify-content: center ;
+    text-align: center;
+}
+
+/* Перемещаем иконки влево */
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Стили для иконок */
+.footer-left a img {
+    width: 40px;
+    height: 40px;
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+/* Эффект при наведении */
+.footer-left a img:hover {
+    filter: brightness(0) invert(1); /* Меняем цвет на белый */
+    transform: scale(1.1); /* Небольшое увеличение при наведении */
+    transition: all 0.3s ease;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+
+/* ----------Основные стили для инфобоксов и карточек---------- */
+
+/* Стили для инфобокса */
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Расстояние между карточками */
+    overflow-x: scroll; /* Горизонтальная прокрутка для длинных рядов */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color:#d3d1d1 ;
+    height: 450px; /* Фиксированная высота для инфобокса */
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+/* Стили для карточек */
+.card {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 14px 14px 6px rgba(0, 0, 0, 0.541);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    text-align: left;
+}
+
+/* Стили для текста и кнопок в карточке */
+.card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.card .description {
+    font-size: 14px;
+    color: #666666;
+    margin: 10px 0;
+}
+
+.card .button {
+    text-decoration: none;
+    color: white;
+    background-color: #f68b7b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+    background-color: #cb3635;
+}
+

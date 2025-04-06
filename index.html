@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css"> <!-- Адаптивные стили -->
+</head>
+<body>
+
+
+    <nav class="navigation">
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="#about">Главная</a></li>
+            <li><a href="#courses">Курсы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Левый блок с декоративными полосами -->
+    <div class="left-stripes">
+        <div class="left-stripe-1"></div>
+        <div class="left-stripe-2"></div>
+    </div>
+
+    <!-- Правый блок с декоративной полосой -->
+    <div class="right-stripe"></div>
+
+    <!-- Здесь будут секции -->
+    <section class="first-section" id="about">
+        <div class="column column-image">
+            <img src="/photo/mainPhoto.JPG" alt="Фото" />
+        </div>
+        <div class="column column-content">
+            <div class="about-title">
+                <div class="about-title-left">
+                    <p class="title-text-1">Обо мне</p>
+                    <p class="title-text-2">Je m’appelle JULIE !</p>
+                    <img src="/image/buterfly2.png" alt="Картинка" />
+                </div>
+                <div class="about-title-right">
+                    <p class="big-text">
+                        Я очень люблю французский! Изучаю его и совершенствую! Я снимаю видео и делюсь своим опытом в изучении этого чудесного языка!
+                    </p>
+                </div>
+            </div>
+        
+            <div class="about-text">
+                <div class="about-text-left">
+                    <p class="big-text">
+                        Я получаю много положительной обратной связи от людей, которые работают по моим материалам.
+                    </p>
+                </div>
+                <div class="about-text-right">
+                    <img src="/image/buterfly1.png" alt="Картинка" />
+                </div>
+            </div>
+        
+            <div class="about-footer">
+                <p class="footer-text">Люблю давать пользу и положительный опыт.<br> Здесь вы можете ознакомиться с моими курсами.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Курсы -->
+    <section class="courses-section" id="courses">
+        <div class="courses-title">
+            <p>КУРСЫ:</p>
+        </div>
+        <div class="info-box" id="courses-info-box">
+            <!-- Карточки будут генерироваться динамически -->
+        </div>
+        <div class="img-footer-course">
+            <img src="/image/tower.png" alt="Картинка" class="img-course-L"/>
+            <img src="/photo/courses.png" alt="Картинка" class="img-course-R"/>
+        </div>
+    </section>
+
+    <!-- Марафоны -->
+    <section class="marathons-section">
+        <div class="marathons-title">
+            <p>МАРАФОНЫ:</p>
+        </div>
+        <div class="info-box" id="marathons-info-box">
+            <!-- Карточки будут генерироваться динамически -->
+        </div>
+        <div class="img-footer">
+            <img src="/image/penVoc.png" alt="Картинка" />
+        </div>
+    </section>
+
+    <!-- Покупки -->
+    <section class="purchase-section">
+        <div class="purchase-title">
+            <p>Также вы можете приобрести:</p>
+        </div>
+        <div class="info-box" id="purchases-info-box">
+            <!-- Карточки будут генерироваться динамически -->
+        </div>
+        <div class="img-footer">
+            <img src="/image/bookButerfly.png" alt="Картинка" />
+         </div>
+    </section>
+    
+    <section class="youtube-section">
+        <div class="youtube-title">
+            <p>YOUTUBE:</p>
+        </div>
+        <div class="youtube-player-box">
+            <!-- Вставляем YouTube плеер -->
+            <div class="youtube-player-container">
+                <iframe
+                    class="youtube-player"
+                    src="https://www.youtube.com/embed/3ckHuPlJMmo?rel=0&showinfo=0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <a
+                    href="https://www.youtube.com/watch?v=3ckHuPlJMmo"
+                    target="_blank"
+                    class="youtube-overlay"
+                ></a>
+            </div>
+            
+            <img class="left-button youtube" src="/image/arrowLeft.png" alt="Кнопка слева">
+            <img class="right-button youtube" src="/image/arrowRight.png" alt="Кнопка справа">
+        </div>
+    </section>
+    
+    <section class="phrase-section">
+        <div class="column column-image">
+            <img src="/photo/lastPhoto.JPG" alt="Фото">
+        </div>
+        <div class="column column-text">
+            <p class="phrase-text">
+                La vie ne consiste pas à attendre que l'orage passe, mais à savoir danser sous la pluie.
+            </p>
+            <img class="phrase-image" src="/image/flower.png" alt="Изображение под фразой">
+        </div>
+    </section>
+    
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-title">
+            <p>Отзывы</p>
+        </div>
+        <div class="reviews-container">
+            <div class="reviews-list">
+                <!-- Карточки будут добавляться здесь через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+        <!-- Футер -->
+    <footer class="footer" id="contacts">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://telegram.me/julie" target="_blank">
+                    <img src="/image/telegram.png" alt="Telegram">
+                </a>
+                <a href="https://www.instagram.com/julie" target="_blank">
+                    <img src="/image/Instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@julie_lie">
+                    <img src="/image/YouTube.png" alt="Email">
+                </a>
+            </div>
+
+            <div class="footer-center">
+                <p class="footer-title">КОНТАКТЫ</p>
+                <p class="footer-copyright">© 2024 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script src="/script.js"></script>

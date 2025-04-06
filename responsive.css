@@ -1,0 +1,874 @@
+/* --- Адаптивные стили --- */
+
+/* Основной фон */
+body {
+    background-color: #ffffff;
+}
+
+/* Базовые стили для экранов 1920x1080 */
+.title {
+    font-size: 60px;
+}
+
+.section-title {
+    font-size: 50px;
+}
+
+.info-box {
+    height: 500px;
+}
+
+.card {
+    width: 380px; /* Увеличьте размер для больших экранов */
+    height: 460px;
+}
+
+.youtube-player-box {
+    width: 80%;
+    height: 70%;
+}
+
+
+/* Адаптация для устройств с шириной экрана до 1200px */
+@media (min-width: 1441px) and (max-width: 1918px) {
+ 
+    .about-title .title-text-1 {
+        font-size: 40px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 30px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        width: 540px;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .about-title-right .big-text {
+        width: 540px;
+        font-size: 30px;
+        margin-bottom: 70px ;
+    }
+
+    .about-text-right img {
+        margin-top: 110px;
+        margin-left: 50px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 42px;
+    }
+
+    .info-box {
+        max-width: auto;
+        height: auto;
+    }
+
+    .card {
+        width: 320px;
+        height: 460px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box {
+        width: 740px;
+        height: 390px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        margin-left: 120px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-left {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Адаптация для устройств с шириной экрана до 1200px */
+@media (min-width: 1280px) and (max-width: 1440px) {
+ 
+    .about-title .title-text-1 {
+        font-size: 40px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 30px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        width: 540px;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .about-title-right .big-text {
+        width: 540px;
+        font-size: 20px;
+        margin-bottom: 70px ;
+    }
+
+    .about-text-right img {
+        margin-top: 110px;
+        margin-left: 50px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 42px;
+    }
+
+    .info-box {
+        max-width: auto;
+        height: auto;
+    }
+
+    .card {
+        width: 420px;
+        height: 460px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box {
+        width: 740px;
+        height: 390px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        margin-left: 120px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-left {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+
+    .about-title .title-text-1 {
+        font-size: 40px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 30px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        width: 380px;
+        font-size: 22px;
+        margin-top: 90px;
+    }
+
+    .about-title-right .big-text {
+        width: 380px;
+        font-size: 20px;
+        margin-bottom: 90px ;
+    }
+
+    .about-text-right img {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 42px;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        overflow-x: scroll;
+        padding: 20px;
+        height: auto;
+        scroll-behavior: smooth;
+    }
+
+    .card {
+        width: 330px;
+        height: 450px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box {
+        width: 740px;
+        height: 390px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        margin-left: 120px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-left {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+/* -------------Адаптация для устройств с шириной экрана до 992px------------- */
+@media (max-width: 1024px) {
+
+    .about-title .title-text-1 {
+        font-size: 40px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 30px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        width: 340px;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .about-title-right .big-text {
+        width: 340px;
+        font-size: 20px;
+        margin-bottom: 70px ;
+    }
+
+    .about-text-right img {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 42px;
+    }
+
+    .info-box {
+        max-width: auto;
+        height: auto;
+    }
+
+    .card {
+        width: 330px;
+        height: 440px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box {
+        width: 740px;
+        height: 390px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        margin-left: 120px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-left {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    
+    .about-title .title-text-1 {
+        font-size: 35px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 25px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        width: 320px;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .about-title-right .big-text {
+        width: 320px;
+        font-size: 20px;
+        margin-bottom: 70px ;
+    }
+
+    .about-text-right img {
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 42px;
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        overflow-x: scroll;
+        padding: 20px;
+        height: auto;
+        scroll-behavior: smooth;
+    }
+
+    .card {
+        width: 380px;
+        height: 450px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box img {
+        display: none ;
+    }
+
+    .youtube-player-box {
+        width: 650px;
+        height: 370px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        margin-left: 120px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-left {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+/* -------------Адаптация для устройств с шириной экрана до 768px------------- */
+@media (min-width: 425px) and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .navigation ul {
+        display: none;
+        flex-direction: row;
+        background-color: #69545098;
+        width: 100%;
+        position: absolute;
+        margin-top: 100px;
+    }
+
+    .navigation ul li {
+        margin: 4px 0;
+        list-style: none;
+    }
+
+    .navigation ul li a {
+        padding: 15px 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+        display: block;
+    }
+
+    .navigation ul.active {
+        display: flex;
+    }
+
+    .first-section {
+        flex-direction: column;
+        align-items: center ;
+        height: 1100px;
+    }
+
+    .column-image img {
+        max-width: auto;
+        min-width: 350px;
+        height: 100%;
+    }
+
+    .column-content p {
+        margin-left: 50px;
+        flex-direction: row;
+        align-items:center;
+
+    }
+
+    .about-title .title-text-1 {
+        font-size: 40px;
+        width: 280px;
+        margin-left: 70px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 30px;
+        width: 310px;
+        margin-left: 70px;
+    }
+
+    .about-footer {
+        width: 330px;
+        margin-right: 40px;
+        margin-top: 60px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 20px;
+    }
+
+    .about-text-left .big-text {
+        position: absolute;
+        width: 340px;
+        margin-left: 20px;
+        margin-top: 130px;
+        font-size: 18px;
+    }
+
+    .about-title-right .big-text {
+        position: absolute;
+        width: 340px;
+        margin-right: 190px;
+        margin-top: 270px;
+        font-size: 18px;
+    }
+
+    .about-title-left img {
+        display: none;
+    }
+
+    .about-text-right img {
+        display: none;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 32px;
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        overflow-x: scroll;
+        padding: 20px;
+        height: auto;
+        scroll-behavior: smooth;
+    }
+
+    .card {
+        width: 320px;
+        height: 460px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section, .youtube-section {
+        height: auto;
+    }
+
+    .youtube-player-box img {
+        display: none ;
+    }
+
+    .youtube-player-box {
+        max-width: 310px;
+        height: 240px;
+    }
+
+    .phrase-section {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center ;
+        height: auto;
+    }
+
+    .phrase-text {
+        width: 320px;
+        font-size: 20px;
+    }
+
+    .phrase-image {
+        width: 200px;
+        height: 50px;
+    }
+
+    .reviews-section {
+        flex-direction: column;
+        align-items: center ;
+        height: 500px;
+    }
+
+    .reviews-container {
+        width: 320px;
+        height: 100%;
+    }
+
+    .footer {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+    }
+
+    .footer-center {
+        padding-left: 0px;
+        margin-left: 120px;
+    }
+
+    .footer-center p {
+        font-size: 14px;
+    }
+
+    .footer-left {
+        margin-right: 230px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+
+    .footer-left a img {
+        width: 30px;
+        height: 30px;
+    }   
+}
+
+
+
+/* -------------Адаптация для устройств с шириной экрана до 375------------- */
+@media (min-width: 320px) and (max-width: 424px) {
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navigation ul {
+        display: none;
+        flex-direction: row;
+        background-color: #69545098;
+        width: 100%;
+        position: absolute;
+        margin-top: 100px;
+    }
+
+    .navigation ul li {
+        margin: 4px 0;
+        list-style: none;
+    }
+
+    .navigation ul li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+        display: block;
+    }
+
+    .navigation ul.active {
+        display: flex;
+    }
+
+    .first-section {
+        flex-direction: column;
+        align-items: center ;
+        height: 850px;
+    }
+
+    .column-image img {
+        width: 100%;
+        max-width: 380px;
+        min-width: 240px;
+        height: auto;
+        border-radius:0%;
+    }
+
+    .column-content p {
+        margin-left: 50px;
+        flex-direction: column;
+        align-items:center;
+        font-size: 25px;
+
+    }
+
+    .about-title .title-text-1 {
+        font-size: 40px;
+        width: 230px;
+        margin-left: 70px;
+    }
+
+    .about-title .title-text-2 {
+        font-size: 20px;
+        width: 230px;
+        margin-left: 70px;
+    }
+
+    .about-footer .footer-text {
+        font-size: 15px;
+        width: 230px;
+        margin-right: 40px;
+    }
+
+    .column-content big-text {
+        font-size: 10px;
+    }
+
+    .about-text-left .big-text {
+        position: absolute;
+        width: 240px;
+        margin-left: 20px;
+        margin-top: 80px;
+        font-size: 15px;
+    }
+
+    .about-title-left img {
+        display: none;
+    }
+
+    .about-text-right img {
+        display: none;
+    }
+
+    .about-title-right .big-text {
+        position: absolute;
+        width: 240px;
+        margin-right: 166px;
+        margin-top: 150px;
+        font-size: 15px;
+    }
+
+    .courses-title p, .marathons-title p, .purchase-title p, .youtube-title p, .reviews-title p {
+        font-size: 32px;
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        overflow-x: scroll;
+        padding: 20px;
+        height: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .card .description {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 220px;
+        height: 460px;
+    }
+
+    .img-footer-course {
+        display: none;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .courses-section, .marathons-section, .purchase-section, .phrase-section {
+        height: auto;
+    }
+
+    .youtube-section {
+        height: 300px;
+    }
+
+    .youtube-player-box img {
+        display: none ;
+    }
+
+    .youtube-player-box {
+        width: 220px;
+        height: 150px;
+    }
+
+    .phrase-section {
+        flex-direction: column;
+        align-items: center ;
+        height: auto;
+    }
+
+    .phrase-text {
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .column-image img {
+        width: 100%;
+        max-width: 380px;
+        min-width: 240px;
+        height: auto;
+        border-radius:0%;
+    }
+
+    .phrase-image {
+        width: 200px;
+        height: 50px;
+    }
+
+    .reviews-section {
+        flex-direction: column;
+        align-items: center ;
+        height: 400px;
+    }
+
+    .reviews-container {
+        width: 250px;
+        height: 350px;
+    }
+
+    .footer {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+    }
+
+    .footer-center {
+        padding-left: 0px;
+        margin-left: 90px;
+    }
+
+    .footer-center p {
+        font-size: 10px;
+    }
+
+    .footer-left {
+        margin-right: 180px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+
+    .footer-left a img {
+        width: 20px;
+        height: 20px;
+    }
+}
